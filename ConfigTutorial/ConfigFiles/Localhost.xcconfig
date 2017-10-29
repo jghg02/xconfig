@@ -1,0 +1,11 @@
+//
+//  Localhost.xcconfig
+//  ConfigTutorial
+//
+//  Created by Josue Hernandez Gonzalez on 10/29/17.
+//  Copyright © 2017 Josue Hernandez Gonzalez. All rights reserved.
+//
+PRODUCT_NAME = TestCinfig App
+IS_APP_VERSION = 0.1
+PRODUCT_BUNDLE_IDENTIFIER = com.jghg02.ConfigTutorial.Local
+BACKEND_URL = http:\/\/localhost:8080

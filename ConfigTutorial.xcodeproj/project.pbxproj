@@ -14,6 +14,7 @@
 		6B6FB9081FA67D950049C0D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6FB9061FA67D950049C0D3 /* LaunchScreen.storyboard */; };
 		6B6FB9131FA67D950049C0D3 /* ConfigTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6FB9121FA67D950049C0D3 /* ConfigTutorialTests.swift */; };
 		6B6FB91E1FA67D950049C0D3 /* ConfigTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6FB91D1FA67D950049C0D3 /* ConfigTutorialUITests.swift */; };
+		6B6FB92F1FA67EA90049C0D3 /* Utilsd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6FB92E1FA67EA90049C0D3 /* Utilsd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		6B6FB9191FA67D950049C0D3 /* ConfigTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfigTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6FB91D1FA67D950049C0D3 /* ConfigTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTutorialUITests.swift; sourceTree = "<group>"; };
 		6B6FB91F1FA67D950049C0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B6FB92C1FA67DB50049C0D3 /* Localhost.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Localhost.xcconfig; sourceTree = "<group>"; };
+		6B6FB92D1FA67DC30049C0D3 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		6B6FB92E1FA67EA90049C0D3 /* Utilsd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilsd.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		6B6FB8FC1FA67D950049C0D3 /* ConfigTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				6B6FB92B1FA67DA50049C0D3 /* ConfigFiles */,
 				6B6FB8FD1FA67D950049C0D3 /* AppDelegate.swift */,
 				6B6FB8FF1FA67D950049C0D3 /* ViewController.swift */,
 				6B6FB9011FA67D950049C0D3 /* Main.storyboard */,
 				6B6FB9041FA67D950049C0D3 /* Assets.xcassets */,
 				6B6FB9061FA67D950049C0D3 /* LaunchScreen.storyboard */,
 				6B6FB9091FA67D950049C0D3 /* Info.plist */,
+				6B6FB92E1FA67EA90049C0D3 /* Utilsd.swift */,
 			);
 			path = ConfigTutorial;
 			sourceTree = "<group>";
@@ -123,6 +129,15 @@
 				6B6FB91F1FA67D950049C0D3 /* Info.plist */,
 			);
 			path = ConfigTutorialUITests;
+			sourceTree = "<group>";
+		};
+		6B6FB92B1FA67DA50049C0D3 /* ConfigFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6B6FB92C1FA67DB50049C0D3 /* Localhost.xcconfig */,
+				6B6FB92D1FA67DC30049C0D3 /* Production.xcconfig */,
+			);
+			path = ConfigFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B6FB92F1FA67EA90049C0D3 /* Utilsd.swift in Sources */,
 				6B6FB9001FA67D950049C0D3 /* ViewController.swift in Sources */,
 				6B6FB8FE1FA67D950049C0D3 /* AppDelegate.swift in Sources */,
 			);
@@ -317,6 +333,7 @@
 /* Begin XCBuildConfiguration section */
 		6B6FB9201FA67D950049C0D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6FB92C1FA67DB50049C0D3 /* Localhost.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -374,6 +391,7 @@
 		};
 		6B6FB9211FA67D950049C0D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6FB92D1FA67DC30049C0D3 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -424,6 +442,7 @@
 		};
 		6B6FB9231FA67D950049C0D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6FB92C1FA67DB50049C0D3 /* Localhost.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +457,7 @@
 		};
 		6B6FB9241FA67D950049C0D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6FB92D1FA67DC30049C0D3 /* Production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
